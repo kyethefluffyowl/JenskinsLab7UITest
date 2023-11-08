@@ -2,7 +2,7 @@
 
 set -x
 # docker run -d -p 80:80 --name my-apache-php-app -v "C:\Users\kye_j\source\repos\3103_Lab07\jenkins-php-selenium-test\JenskinsLab7UITest\\src:/var/www/html" php:7.2-apache
-docker run -d -p 80:80 --name my-apache-php-app -v /var/jenkins_home/workspace/jenkins-phpunit-test-7Selenium/src:/var/www/htm php:7.2-apache
+docker run -d -p 80:80 --name my-apache-php-app -v /var/jenkins_home/workspace/jenkins-phpunit-test-7Selenium/src:/var/www/html php:7.2-apache
 
 sleep 1
 set +x
