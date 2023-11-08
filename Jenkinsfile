@@ -7,7 +7,7 @@ pipeline {
 					agent any
 					steps {
 						sh './jenkins/scripts/deploy.sh'
-						input message: 'Finished using the web site? (Click "Proceed" to continue)'
+						input message: 'Finished using the web site? (Click "Proceed" to close the server)'
 						sh './jenkins/scripts/kill.sh'
 					}
 				}
